@@ -1,0 +1,351 @@
+:root{
+    --background1: #EEF1DA;
+    --background2: #D5E5D5;
+    --background3: #3c767c;
+    --background4: #205781;
+
+    --colorfont1: #0d0d0d;
+    --colorfont2: #000000;
+    --colorfont3: #ffffff;
+
+    --fontfamily: sans-serif;
+
+    --fontsizeh1: 62px;
+    --fontsizeh2: 28px;
+    --fontsizep: 18px;
+    --fontsizepMini: 16px;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    margin: 0 7rem;
+}
+header{
+    background-color: var(--background1);
+    min-height: 100vh;
+}
+nav{
+    padding-top: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header nav img{
+    width: 80px;
+}
+header ul{
+    list-style: none;
+    display: flex;
+}
+header ul a{
+    text-decoration: none;
+    color: var(--colorfont1);
+}
+header ul li{
+    margin: 0 30px;
+}
+header .row{
+    display: flex;
+    padding-top: 10px;
+    justify-content: center;
+}
+header .row .content{
+    width: 50%;
+    padding-right: 25px;
+}
+header .row .content h1{
+    font-size: var(--fontsizeh1);
+    padding-top: 70px;
+}
+header .row .content p{
+    font-size: var(--fontsizep);
+    padding: 50px 0;
+    line-height: 1.6;
+    color: var(--colorfont1);
+}
+header .row .content input{
+    padding: 8px 15px;
+    width: 300px;
+    margin-right: 20px;
+    outline: none;
+}
+header .row .content button{
+    padding: 8px 15px;
+    cursor: pointer;
+    background-color: #ADB2D4;
+    outline: none;
+    width: 140px;
+    border-radius: 5px;
+    border: solid 1px #8a90a2;
+}
+header .row img{
+    width: 50%;
+}
+main .team{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+main .team .content{
+    width: 50%;
+}
+main .team h2{
+    font-size: var(--fontsizeh2);
+    padding-top: 20px;
+    padding-bottom: 40px;
+    color: var(--colorfont2);
+}
+main .team p{
+    font-size: var(--fontsizep);
+    color: var(--colorfont1);
+    padding-bottom: 20px;
+}
+main .team a i{
+    font-size: 14px;
+}
+main .team .box{
+    margin-top: 35px;
+    background-color: var(--background2);
+    width: 70%;
+    padding:25px 10px;
+    border-radius: 15px;
+    box-shadow: 1px 1px 10px var(--background2);
+}
+main .team .box .quote{
+    width: 15px;
+}
+main .team .box p{
+    font-size: var(--fontsizepMini);
+    padding-top: 15px;
+}
+main .team .box .identity{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 30px;
+}
+main .team .box .identity img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+main .team .box .identity div h3{
+    font-size: var(--fontsizep);
+}
+main .team .box .identity div p{
+    padding: 0;
+    font-size: 14px;
+}
+.newslettre{
+    min-height: 40vh;
+    background-color: var(--background3);
+    margin-top: 50px;
+}
+.newslettre .row{
+    display: flex;
+    padding: 50px 0;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.newslettre .col1{
+    width: 50%;
+}
+.newslettre .col1 h2{
+    color: var(--colorfont3);
+    font-size: var(--fontsizeh2);
+    padding: 8px 0;
+}
+.newslettre .col1 p{
+    color: var(--colorfont3);
+    font-size: var(--fontsizep);
+    padding: 30px 0;
+}
+.newslettre .col2 input{
+    width: 100%;
+    padding: 8px 15px;
+    outline: none; 
+}
+.newslettre .col2 button{
+    padding: 8px 15px;
+    cursor: pointer;
+    background-color: #ADB2D4;
+    outline: none;
+    border-radius: 5px;
+    border: solid 1px #8a90a2;
+    margin-top: 40px;
+}
+footer{
+    background-color: var(--background4);
+    padding-bottom: 10px;
+}
+footer img{
+    width: 80px;
+    padding: 10px 0;
+}
+footer p{
+    font-size: var(--fontsizepMini);
+    color: var(--colorfont3);
+    margin-bottom: 10px;
+}
+footer ul{
+    list-style: none;
+}
+footer li{
+    margin-bottom: 10px;
+}
+footer a{
+    text-decoration: none;
+    color: var(--colorfont3);
+}
+footer .row{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+footer .col1{
+    width: 40%;
+}
+footer .col1 .info{
+    display: flex;
+    gap: 15px;
+}
+footer i{
+    color: var(--colorfont3);
+}
+footer .col4 i{
+    padding: 0 20px;
+    font-size: 19px;
+}
+footer .designer{
+    text-align: center;
+    margin: 40px auto;
+    font-size: var(--fontsizepMini);
+}
+
+@media (max-width: 1100px) {
+    header .row .content h1{
+        font-size: 40px;
+        padding-top: 20px;
+    }
+    .container{
+        margin: 0 2rem;
+    }
+    header .row .content button{
+        width: 300px;
+        margin: 10px 0;
+    }
+    main .team .box{
+        width: 100%;
+    }
+    header .row .content{
+        padding-right: 15px;
+    }
+    main .imgTeam{
+        width: 40%;
+    }
+    .newslettre .col2{
+        padding-left: 15px;
+    }
+}
+@media (max-width: 800px){
+    h1{
+        font-size: 25px;
+    }
+    nav{
+        padding-top: 10px;
+        flex-direction: column;
+    }
+    header ul{
+        padding-top: 5px;
+    }
+    header .row{
+        flex-direction: column;
+        text-align: center;
+    }
+    header .row .content{
+        width: 100%;
+    }
+    header .row img{
+        width: 90%;
+    }
+    header .row .content input{
+        margin-right: 0;
+    }
+    header .row .content h1{
+        font-size: 32px;
+        padding-top: 30px;
+    }
+    header .row .content p{
+        padding: 30px 0;
+        line-height: 1;
+        color: var(--colorfont1);
+    }
+    main .team{
+        flex-direction: column;
+        text-align: center;
+    }
+    main .team .content{
+        width: 100%;
+    }
+    main .team img{
+        width: 90%;
+        padding: 10px 0;
+    }
+    main .team .box .identity{
+        justify-content: center;
+        gap: 10px;
+    }
+    main .team .box .identity div{
+        text-align: left;
+    }
+    main .team h2{
+        padding-bottom: 20px;
+    }
+    .newslettre{
+        margin-top: 10px;
+    }
+    .newslettre .row{
+        flex-direction: column;
+        text-align: center;
+    }
+    .newslettre .col1{
+        width: 100%;
+    }
+    .newslettre .col2{
+        width: 100%;
+    }
+    .newslettre .col1 h2{
+        padding: 10px 0;
+    }
+    .newslettre .col1 p{
+        padding: 20px 0;
+    }
+    .newslettre .col2 input{
+        width: 100%;
+        padding: 10px 15px;
+        outline: none; 
+    }
+    .newslettre .col2 button{
+        margin-top: 20px;
+    }
+    footer{
+        text-align: center;
+        padding-bottom: 10px;
+    }
+    footer .row{
+        flex-direction: column;
+    }
+    footer .col1, footer .col2, footer .col3, footer .col4{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    footer .col1 .info{
+        justify-content: center;
+    }
+    footer .designer{
+        margin-top: 20px;
+    }
+}
